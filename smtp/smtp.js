@@ -41,7 +41,7 @@ router.post('/:route', bodyParser.urlencoded(true), function (req, res) {
             mailOptions = {
                 from: "pinnakle.work@gmail.com",
                 to: data.recipient,
-                subject: data.subject,
+                subject: "Welcome on Everest",
                 template: route + '/' + route + '.body',
                 context: {
                     username: data.username
